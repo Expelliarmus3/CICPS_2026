@@ -49,7 +49,7 @@ transform = transforms.Compose(
 )
 
 
-TEST_DATA_PATH = r"C:\Users\rocky\Desktop\CICPS_2026\test_folder" 
+TEST_DATA_PATH = input("Enter your image path:")#r"C:\Users\rocky\Desktop\CICPS_2026\test_folder" 
 
 try:
     test_dataset = ImageFolder(root=TEST_DATA_PATH, transform=transform)
