@@ -1,0 +1,6 @@
+node_modules/
+pycache/
+.env
+venv/
+# If your model file is >100MB, you cannot push it to standard GitHub
+# skin_disease_resnet18_best.pth

@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Linkedin, Twitter, Facebook, Instagram, Upload, Menu, X, ArrowRight, User, Lock, Mail, Loader } from 'lucide-react';
 
+// --- CONFIGURATION ---
+// This automatically picks the right URL:
+// 1. If running locally, it might use localhost (if configured in .env)
+// 2. If deployed, it uses the Vercel environment variable
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 const Header = ({ navigateTo }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -281,8 +287,10 @@ const DiagnosisView = () => {
     formData.append('file', selectedFile);
 
     try {
-      // Connect to the Flask Backend
-      const response = await fetch('http://localhost:5000/predict', {
+      // USE THE DYNAMIC API URL HERE
+      console.log("Submitting to:", `${API_URL}/predict`);
+      
+      const response = await fetch(`${API_URL}/predict`, {
         method: 'POST',
         body: formData,
       });
@@ -295,7 +303,7 @@ const DiagnosisView = () => {
       setResult(data);
     } catch (err) {
       console.error(err);
-      setError("Failed to connect to the server. Please ensure the backend is running.");
+      setError("Failed to connect to the server. If running locally, check if backend is on.");
     } finally {
       setIsLoading(false);
     }
