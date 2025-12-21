@@ -17,8 +17,8 @@ distinct skin lesion categories, the system provides rapid and quantitative diag
 ## INSTALLATION
 
 * Clone this repository
-* Download a test image and save it in the same folder as the model and predict file
-* Uncomment the predict.py file
+* Download a test image and save it in the same folder as the model and predict_new.py file
+* Uncomment the predict_new.py file
 * open the folder in a IDE and open predict_new.py and run it
 * When prompted add the address of your test image
   
