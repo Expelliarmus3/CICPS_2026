@@ -21,6 +21,7 @@ distinct skin lesion categories, the system provides rapid and quantitative diag
 * Uncomment the predict_new.py file
 * open the folder in a IDE and open predict_new.py and run it
 * When prompted add the address of your test image
+* To verify use our website: https://cicps-2026.vercel.app/
   
 ## Model Architecture
 
