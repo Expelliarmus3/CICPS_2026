@@ -1,11 +1,14 @@
 # SKIN DISEASE CLASSIFIER
 
+DEPLOYED URL: https://cicps-2026.vercel.app/
+
 The objective of this project is to develop and implement a robust deep learning solution for the automated classification of common dermatoscopic images. By leveraging a
 pre-trained convolutional neural network (CNN) architecture and fine-tuning it for seven
 distinct skin lesion categories, the system provides rapid and quantitative diagnostic predictions based on image analysis
 - DATA SET
 - INSTALLATION GUIDE
 - MODEL ARCHITECTURE
+  
 
 ## DATA SET
 * [HAM10000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
@@ -15,6 +18,7 @@ distinct skin lesion categories, the system provides rapid and quantitative diag
 
 * Clone this repository
 * Download a test image and save it in the same folder as the model and predict file
+* Uncomment the predict.py file
 * open the folder in a IDE and open predict_new.py and run it
 * When prompted add the address of your test image
   
